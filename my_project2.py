@@ -8,7 +8,7 @@ my_url = 'https://www.newegg.com/Video-Cards-Video-Devices/Category/ID-38?Tpk=gr
 uClient = uReq(my_url)
 page_html = uClient.read()
 uClient.close()
-
+ 
 page_soup = soup(page_html, "html.parser")
 
 containers = page_soup.findAll("div", {"class": "item-container"})
